@@ -32,24 +32,22 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="">
-      <div className="flex flex-col justify-top text-center items-center h-[calc(100vh-80px)] py-12 md:py-24 gap-12 md:gap-16 
+    <div className="flex flex-col justify-top text-center items-center min-h-[calc(100vh-80px)] py-12 md:py-24 gap-12 md:gap-16 
       bg-gradient-to-t from-gray-300 to-secondary">
-        <div className="text-6xl md:text-8xl">
-          {/* tailwind styling in Typewriter component didn't work */}
-          <Typewriter options={typewriterOptions}/>
-        </div>
-        <div className="text-xl md:text-3xl">CS Major @ SJSU + aspiring software engineer</div>
-        <div className="text-xl md:text-3xl">As of right now, I am probably...</div>
-        <div className="text-4xl md:text-5xl h-10 md:h-12 mb-6 lg:mb-0">
-          <p>{randomText}</p>
-        </div>
-        <div className="text-xl md:text-3xl flex flex-col items-center text-center gap-10">
-          Click the button below to learn more about me.
-          <Link href='/about'>
-            <button className="btn text-center w-44 rounded-lg">About Me</button>
-          </Link>
-        </div>
+      <div className="text-6xl md:text-8xl">
+        {/* tailwind styling in Typewriter component didn't work */}
+        <Typewriter options={typewriterOptions}/>
+      </div>
+      <div className="text-xl md:text-3xl">CS Major @ SJSU + aspiring software engineer</div>
+      <div className="text-xl md:text-3xl">As of right now, I am probably...</div>
+      <div className="text-4xl md:text-5xl h-10 md:h-12 mb-6 lg:mb-0">
+        <p>{randomText}</p>
+      </div>
+      <div className="text-xl md:text-3xl flex flex-col items-center text-center gap-10">
+        Click the button below to learn more about me.
+        <Link href='/about'>
+          <button className="btn text-center w-44 rounded-lg">About Me</button>
+        </Link>
       </div>
     </div>
   );
