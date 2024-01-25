@@ -36,9 +36,7 @@ export default function ProjectModalComponent({photoUrl, title, dateInfo, descri
               <div className="text-sm">{dateInfo} - <Link href={repoUrl} target="_blank" rel="noopener noreferrer" className="font-bold hover:text-cyan-400">VIEW ON GITHUB</Link></div>
               <div className="text-2xl">
                 {description.split('\n').map((line, index, array) => (
-                  <span key={index}>
-                    {line}{index !== array.length - 1 && <br />}
-                  </span>
+                  <span key={index}>{line}{index !== array.length - 1 && <br />}</span>
                 ))}
                 {!!extraLink && <Link href={extraLink} target="_blank" rel="noopener noreferrer" className="font-bold hover:text-cyan-400">{' '}HERE</Link>}
               </div>
