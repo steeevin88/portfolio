@@ -43,7 +43,9 @@ export default function ProjectModalComponent({photoUrl, title, dateInfo, descri
                 {!!extraLink && <Link href={extraLink} target="_blank" rel="noopener noreferrer" className="font-bold hover:text-cyan-400">{' '}HERE</Link>}
               </div>
             </div>
-            <Image src={photoUrl} alt="logo" width="64" height="64" className="w-auto h-auto border-4 border-gray-700 rounded-lg"/>
+            <Link href={repoUrl} target="_blank" rel="noopener noreferrer">
+              <Image src={photoUrl} alt="logo" width="64" height="64" className="w-auto h-auto border-4 border-gray-700 rounded-lg"/>
+            </Link>
             <div className="text-2xl text-left">Technologies Used: {technologies}</div>
             <div className="modal-action col-span-2 justify-center">
               <form method="dialog">

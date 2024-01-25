@@ -9,7 +9,7 @@ export default function ExperienceCard({ photoUrl, title, dateRange, description
     
   return (
     <button onClick={() => setFlip(!flip)} className="mx-4 mb-4">
-      <ReactCardFlip isFlipped={flip} flipDirection="vertical">
+      <ReactCardFlip isFlipped={flip} flipDirection="horizontal">
 
         {/* Front Side */}
         <button onClick={() => setFlip(!flip)}>

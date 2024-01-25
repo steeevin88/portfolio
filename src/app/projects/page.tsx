@@ -33,8 +33,9 @@ const projectsData: Project[] = [
     photoUrl: 'https://github.com/steeevin88/portfolio/assets/59713070/18efee1f-70a1-49bb-a1f0-0bb5a22f5527',
     title: 'FaceToFace',
     dateInfo: 'Created in October 2023',
-    description: 'NextJS application that allows users to coordinate events with friends by allowing them to upload personal .ics files from modern calendar applications (ex. Google Calendar). Users can register for accounts and add friends to access their availabilities and schedule (in-person) meetings. Additionally, users can be recommended events based on their preferences and their (stored) meeting history.\n\nThis project was a submission to CalHacks 2023.',
+    description: 'NextJS application that allows users to coordinate events with friends by allowing them to upload personal .ics files from modern calendar applications (ex. Google Calendar). Users can register for accounts and add friends to access their availabilities and schedule (in-person) meetings. Additionally, users can be recommended events based on their preferences and their (stored) meeting history.\n\nThis project was a submission to CalHacks 2023.\n\nView the Devpost submission',
     repoUrl: 'https://github.com/steeevin88/schedulerAI',
+    extraLink: 'https://devpost.com/software/safe-and-slug',
     technologies: 'NextJS, Tailwind, Prisma, CockroachDB, TogetherAI'
   },
   {
@@ -49,8 +50,9 @@ const projectsData: Project[] = [
     photoUrl: 'https://github.com/steeevin88/steeevin88/assets/59713070/e22c5ddd-6788-45e3-afc4-d4cc71460dfe',
     title: 'NutriCount',
     dateInfo: 'Created in February 2023',
-    description: 'Web app made as part of Santa Clara University\'s Hack for Humanity (2023)',
+    description: 'Static web app made as part of Santa Clara University\'s Hack for Humanity (2023)\n\nView the Devpost submission',
     repoUrl: 'https://github.com/steeevin88/NutriCount',
+    extraLink: 'https://devpost.com/software/nutricount-ol12bw',
     technologies: 'HTML/CSS, Bulma, Javascript'
   },
   {
@@ -79,7 +81,7 @@ export default function Projects() {
         })}
       </div>
       <Link href='/projects' className="text-center">
-        <button className="btn text-center w-44 rounded-lg">Contact Me</button>
+        <button className="btn text-center w-44 mb-2 rounded-lg">Contact Me</button>
       </Link>
     </div>
   )
