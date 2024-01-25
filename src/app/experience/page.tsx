@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ExperienceCard from '../components/ExperienceCard';
+import ExperienceCard from './ExperienceCard';
 
 type Experience = {
   photoUrl : string;

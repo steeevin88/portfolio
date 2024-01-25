@@ -4,7 +4,7 @@ import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import Image from "next/image"
 import Link from "next/link";
-import logo from "../logo.png";
+import logo from "../app/logo.png";
 
 export default function Navbar() {
   const [toggled, setToggled] = useState(false);
