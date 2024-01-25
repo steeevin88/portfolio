@@ -23,7 +23,7 @@ export default function Navbar() {
         <Link href="/experience" onClick={() => setToggled(!toggled)}>Experience</Link>
         <Link href="/projects" onClick={() => setToggled(!toggled)}>Projects</Link>
       </div>
-      <button className="btn rounded-lg">Resume</button>
+      <Link href="https://drive.google.com/file/d/1u5OYrfA5KvxIqd_Kjg8p15Z3sQNscePU/view" target="_blank" rel="noopener noreferrer"><button className="btn rounded-lg">Resume</button></Link>
     </nav>
   )
 }

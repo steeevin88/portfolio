@@ -4,7 +4,7 @@ import classNames from "classnames";
 import Image from 'next/image';
 import Link from "next/link";
 
-export default function ProjectModalComponent({photoUrl, title, dateInfo, description, repoUrl, technologies} : {photoUrl : string, title : string, dateInfo : string, description : string, repoUrl : string, technologies : string}) {
+export default function ProjectModalComponent({photoUrl, title, dateInfo, description, repoUrl, extraLink, technologies} : {photoUrl : string, title : string, dateInfo : string, description : string, repoUrl : string, extraLink? : string, technologies : string}) {
   const [isToggled, toggle] = useState(false);
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
@@ -28,13 +28,20 @@ export default function ProjectModalComponent({photoUrl, title, dateInfo, descri
   
   return(
     <div className="col-span-5 gap-0 text-center">
-      <button className="bg-gray-700 rounded-lg text-primary-content text-sm p-2 border:none" onClick={()=>toggle(true)}>View more...</button>
+      <button className="bg-gray-700 rounded-lg text-primary-content text-sm p-2 border:none hover:bg-gray-600" onClick={()=>toggle(true)}>View more...</button>
       {<dialog ref={ref} className={classNames("modal", {"modal-open": isToggled})}>
           <div className="modal-box bg-secondary text-black text-wrap max-w-none md:w-[70%] flex flex-col gap-4">
             <div className="flex flex-col gap-4 text-left">
               <h3 className="font-bold text-5xl">{title}</h3>
               <div className="text-sm">{dateInfo} - <Link href={repoUrl} target="_blank" rel="noopener noreferrer" className="font-bold hover:text-cyan-400">VIEW ON GITHUB</Link></div>
-              <div className="text-2xl">{description}</div>
+              <div className="text-2xl">
+                {description.split('\n').map((line, index, array) => (
+                  <span key={index}>
+                    {line}{index !== array.length - 1 && <br />}
+                  </span>
+                ))}
+                {!!extraLink && <Link href={extraLink} target="_blank" rel="noopener noreferrer" className="font-bold hover:text-cyan-400">{' '}HERE</Link>}
+              </div>
             </div>
             <Image src={photoUrl} alt="logo" width="64" height="64" className="w-auto h-auto border-4 border-gray-700 rounded-lg"/>
             <div className="text-2xl text-left">Technologies Used: {technologies}</div>
