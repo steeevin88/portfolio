@@ -68,7 +68,7 @@ const projectsData: Project[] = [
 
 export default function Projects() {
   return (
-    <div className="min-h-[calc(100vh-80px)] bg-gradient-to-t from-gray-300 to-secondary flex flex-col xl:px-24 gap-8 items-center">
+    <div className="min-h-[calc(100vh-80px)] bg-gradient-to-t from-gray-300 to-primary flex flex-col xl:px-24 gap-8 items-center">
       <div className="flex flex-col px-8 lg:px-12 text-center gap-4">
         <div className="text-5xl lg:text-6xl">PROJECTS</div>
         <div className="text-xl px-8 lg:px-12">A few things that I&apos;ve worked on...</div>

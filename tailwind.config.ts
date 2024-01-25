@@ -17,7 +17,12 @@ const config: Config = {
   },
   daisyui: {
     themes: [
-      "business",
+      {
+        mytheme: {
+          "primary": "#7C909A",
+          "base-100": "#1C1C1C"
+        }
+      }
     ],
   },
   plugins: [require("daisyui")],

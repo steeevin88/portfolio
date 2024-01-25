@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="min-h-[calc(100vh-80px)] bg-gradient-to-t from-gray-300 to-secondary grid md:grid-cols-2 lg:grid-cols-5 px-10 lg:px-40 gap-10">
+    <div className="min-h-[calc(100vh-80px)] bg-gradient-to-t from-gray-300 to-primary grid md:grid-cols-2 lg:grid-cols-5 px-10 lg:px-40 gap-10">
       <div className="flex flex-col lg:col-span-3 lg:px-10 gap-12 pt-16">
         <div className="text-6xl">ABOUT</div>
         <div className="text-3xl">Welcome!</div>
