@@ -4,7 +4,7 @@ import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import Image from "next/image"
 import Link from "next/link";
-import logo from "../app/logo.png";
+import logo from "../logo.png";
 
 export default function Navbar() {
   const [toggled, setToggled] = useState(false);
@@ -22,7 +22,6 @@ export default function Navbar() {
         <Link href="/about" onClick={() => setToggled(!toggled)}>About</Link>
         <Link href="/experience" onClick={() => setToggled(!toggled)}>Experience</Link>
         <Link href="/projects" onClick={() => setToggled(!toggled)}>Projects</Link>
-        <Link href="/socials" onClick={() => setToggled(!toggled)}>Contact</Link>
       </div>
       <button className="btn rounded-lg">Resume</button>
     </nav>
