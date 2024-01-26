@@ -70,7 +70,7 @@ export default function Experience() {
   ];
 
   return (
-    <div className="min-h-[calc(100vh-80px)] bg-gradient-to-t from-gray-300 to-primary flex flex-col lg:px-24 gap-12 pt-16">
+    <div className="min-h-[calc(100vh-80px)] bg-gradient-to-t from-gray-300 to-[#7C909A] flex flex-col lg:px-24 gap-12 py-1 md:pt-16">
       <div className="flex flex-row justify-between px-8 lg:px-12">
         <div className="flex flex-col">
           <div className="text-center text-5xl lg:text-left lg:text-6xl">EXPERIENCES</div>

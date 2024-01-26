@@ -30,23 +30,21 @@ export default function ProjectModalComponent({photoUrl, title, dateInfo, descri
     <div className="col-span-5 gap-0 text-center">
       <button className="bg-gray-700 rounded-lg text-black text-sm p-2 border:none hover:bg-gray-600" onClick={()=>toggle(true)}>View more...</button>
       {<dialog ref={ref} className={classNames("modal", {"modal-open": isToggled})}>
-          <div className="modal-box bg-primary text-black text-wrap max-w-none md:w-[70%] flex flex-col gap-4">
+          <div className="modal-box bg-[#7C909A] text-black whitespace-normal max-w-none md:w-[70%] flex flex-col gap-4">
             <div className="flex flex-col gap-4 text-left">
-              <h3 className="font-bold text-5xl text-wrap">{title}</h3>
-              <div className="text-sm text-wrap">{dateInfo} - <Link href={repoUrl} target="_blank" rel="noopener noreferrer" className="font-bold hover:text-cyan-400">VIEW ON GITHUB</Link></div>
-              <div className="text-2xl text-wrap">
+              <h3 className="font-bold text-4xl">{title}</h3>
+              <div className="text-sm">{dateInfo} - <Link href={repoUrl} target="_blank" rel="noopener noreferrer" className="font-bold link hover:text-cyan-300">VIEW ON GITHUB</Link></div>
+              <div className="text-2xl">
                 {description.split('\n').map((line, index, array) => (
-                  <span key={index}>
-                    {line}{index !== array.length - 1 && <br />}
-                  </span>
-                ))}
-                {!!extraLink && <Link href={extraLink} target="_blank" rel="noopener noreferrer" className="font-bold hover:text-cyan-400">{' '}HERE</Link>}
+                  <span key={index}>{line}{index !== array.length - 1 && <br />}</span>
+                ))}{' '}
+                {!!extraLink && <Link href={extraLink} target="_blank" rel="noopener noreferrer" className="font-bold link hover:text-cyan-300">HERE</Link>}
               </div>
             </div>
             <Link href={repoUrl} target="_blank" rel="noopener noreferrer">
               <Image src={photoUrl} alt="logo" width="64" height="64" className="w-auto h-auto border-4 border-gray-700 rounded-lg"/>
             </Link>
-            <div className="text-2xl text-left text-wrap">Technologies Used: {technologies}</div>
+            <div className="text-2xl text-left">Technologies Used: {technologies}</div>
             <div className="modal-action col-span-2 justify-center">
               <form method="dialog">
                 <button onClick={() => toggle(false)} className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-2xl">X</button>
