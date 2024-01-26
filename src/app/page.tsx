@@ -32,7 +32,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-top text-center items-center min-h-[calc(100vh-80px)] py-12 md:py-24 gap-12 md:gap-16 
+    <div className="flex flex-col justify-top text-center items-center min-h-[calc(100vh-80px)] py-1 md:py-[10vh] gap-12 md:gap-16 
       bg-gradient-to-t from-gray-300 to-[#7C909A]">
       <div className="text-6xl md:text-8xl">
         {/* tailwind styling in Typewriter component didn't work */}

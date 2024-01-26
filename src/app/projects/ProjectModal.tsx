@@ -30,15 +30,15 @@ export default function ProjectModalComponent({photoUrl, title, dateInfo, descri
     <div className="col-span-5 gap-0 text-center">
       <button className="bg-gray-700 rounded-lg text-black text-sm p-2 border:none hover:bg-gray-600" onClick={()=>toggle(true)}>View more...</button>
       {<dialog ref={ref} className={classNames("modal", {"modal-open": isToggled})}>
-          <div className="modal-box bg-[#7C909A] text-black text-wrap whitespace-nowrap max-w-none md:w-[70%] flex flex-col gap-4">
+          <div className="modal-box bg-[#7C909A] text-black whitespace-normal max-w-none md:w-[70%] flex flex-col gap-4">
             <div className="flex flex-col gap-4 text-left">
               <h3 className="font-bold text-4xl">{title}</h3>
-              <div className="text-sm">{dateInfo} - <Link href={repoUrl} target="_blank" rel="noopener noreferrer" className="font-bold hover:text-cyan-400">VIEW ON GITHUB</Link></div>
-              <div className="text-2xl max-w-screen">
+              <div className="text-sm">{dateInfo} - <Link href={repoUrl} target="_blank" rel="noopener noreferrer" className="font-bold link hover:text-cyan-300">VIEW ON GITHUB</Link></div>
+              <div className="text-2xl">
                 {description.split('\n').map((line, index, array) => (
                   <span key={index}>{line}{index !== array.length - 1 && <br />}</span>
-                ))}
-                {!!extraLink && <Link href={extraLink} target="_blank" rel="noopener noreferrer" className="font-bold hover:text-cyan-400">{' '}HERE</Link>}
+                ))}{' '}
+                {!!extraLink && <Link href={extraLink} target="_blank" rel="noopener noreferrer" className="font-bold link hover:text-cyan-300">HERE</Link>}
               </div>
             </div>
             <Link href={repoUrl} target="_blank" rel="noopener noreferrer">
