@@ -86,19 +86,19 @@ const projectsData: Project[] = [
 
 export default function Projects() {
   return (
-    <div className="min-h-[calc(100vh-80px)] bg-gradient-to-t from-gray-300 to-[#7C909A] flex flex-col xl:px-24 gap-8 items-center">
+    <div className="min-h-[100vh] bg-gradient-to-b from-gray-300 to-[#7C909A] flex flex-col pt-[17.5vh] xl:px-24 gap-8 items-center" id="projects">
       <div className="flex flex-col px-8 lg:px-12 text-center gap-4">
         <div className="text-5xl lg:text-6xl">PROJECTS</div>
         <div className="text-xl px-8 lg:px-12">A few things that I&apos;ve worked on...</div>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 justify-space-between gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 justify-space-between gap-8">
         {projectsData.map((project, index) => {
           return (
             <ProjectCard {...project} key={index}/>
           );
         })}
       </div>
-      <Link href='/' className="text-center">
+      <Link href='#home' className="text-center">
         <button className="btn text-center w-44 mb-2 rounded-lg">To Home</button>
       </Link>
     </div>

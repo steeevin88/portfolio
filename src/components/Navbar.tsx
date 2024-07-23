@@ -19,9 +19,9 @@ export default function Navbar() {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row gap-4 lg:gap-20 mt-4 mb-8 lg:my-0">
-        <Link href="/about" onClick={() => setToggled(!toggled)}>About</Link>
-        <Link href="/experience" onClick={() => setToggled(!toggled)}>Experience</Link>
-        <Link href="/projects" onClick={() => setToggled(!toggled)}>Projects</Link>
+        <Link href="#about" onClick={() => setToggled(!toggled)}>About</Link>
+        <Link href="#experience" onClick={() => setToggled(!toggled)}>Experience</Link>
+        <Link href="#projects" onClick={() => setToggled(!toggled)}>Projects</Link>
       </div>
       <Link href="https://drive.google.com/file/d/18GNlxTva-8pbxtfJufObDr2tN-0hhnLa/view?usp=drive_link" target="_blank" rel="noopener noreferrer"><button className="btn rounded-lg">Resume</button></Link>
     </nav>

@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`text-black ${inter.className}`}>
         <Navbar/>
-        <div className="mt-20">{children}</div>
+        {children}
         <Footer/>
         <Analytics />
       </body>

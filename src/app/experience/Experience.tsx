@@ -105,24 +105,24 @@ export default function Experience() {
   ];
 
   return (
-    <div className="min-h-[calc(100vh-80px)] bg-gradient-to-t from-gray-300 to-[#7C909A] flex flex-col lg:px-24 gap-12 py-1 md:pt-16">
+    <div className="min-h-[100vh] bg-gradient-to-b from-[#7C909A] to-gray-300 flex flex-col lg:px-24 gap-12 py-1 pt-[17.5vh]" id="experience">
       <div className="flex flex-row justify-between px-8 lg:px-12">
         <div className="flex flex-col">
           <div className="text-center text-5xl lg:text-left lg:text-6xl">EXPERIENCES</div>
           <div className="text-md lg:text-left lg:text-md pl-1 md:hidden">Scroll to view more...</div>
         </div>
-        <Link href='/projects' className="hidden md:block">
+        <Link href='#projects' className="hidden md:block">
           <button className="btn text-center w-44 rounded-lg">View Projects</button>
         </Link>
       </div>
-      <div className="flex overflow-x-scroll md:flex-wrap md:justify-center">
+      <div className="flex overflow-x-auto md:flex-wrap md:justify-center">
         {experienceData.map((experience, index) => {
           return (
             <ExperienceCard {...experience} key={index}/>
           );
         })}
       </div>
-      <Link href='/projects' className="md:hidden text-center">
+      <Link href='#projects' className="md:hidden text-center">
         <button className="btn text-center w-44 rounded-lg">View Projects</button>
       </Link>
     </div>
