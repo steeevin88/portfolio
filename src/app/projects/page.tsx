@@ -13,6 +13,24 @@ type Project = {
 
 const projectsData: Project[] = [
   {
+    photoUrl: 'https://github.com/user-attachments/assets/5bc50f30-46af-47cb-b924-796868fc9f64',
+    title: 'Pantry Patrol',
+    dateInfo: 'Created in April 2024',
+    description: 'Before HackDavis began, our team really struggled to decide on a specific project. With so many ideas and technologies, we just weren\'t sure what to develop. However, we were able to talk to an individual representing Davis Community Meals & Housing (DCMH) and inquire about their initial application ideas. From there, we ideated, discussing potential new features and ultimately, we decided on our project: Pantry Patrol.\n\nPantry Patrol is an inventory management application designed specifically for DCMH\'s specifications. They wanted an application that facilitated inventory management to assist with managing donations that came in. Additionally, they wanted a user interface that allowed individuals to understand what products they had on their "wish list" and the number of such products, such that potential donors don\'t "over-donate" on certain products.\n\nPantry Patrol handles all of this and MORE. For example, one of the priorities of DCMH was being reachable to donors and incentivizing donations. To account for this, we added an email blast feature that emails individuals subscribed to the organization\'s mailing list, such that they would periodically receive assistance emails when products are low in stock. This way, donors are hopefully more inclined to donate to the organization as they are being reached out to directly.\n\nThis project was awarded MLH\'s Best Use of PropelAuth at HackDavis 2024. We\'re currently working with DCMH to integrate Pantry Patrol into their existing services....\n\nView our winning Devpost submission',
+    repoUrl: 'https://github.com/Luceium/DCMH',
+    extraLink: 'https://devpost.com/software/pantry-patrol-7qhujk',
+    technologies: 'NextJS, Tailwind/ DaisyUI, Prisma, MongoDB, PropelAuth'
+  },
+  {
+    photoUrl: 'https://github.com/user-attachments/assets/5ffd0691-964f-48c4-9715-1ba63a770a5c',
+    title: 'Roomy',
+    dateInfo: 'Created in April 2024',
+    description: 'Roomy, originally named Harmonic Homes, aimed to apply the tool forming and auto GPT research paper concepts to build an intelligent smart home assistant, capable of handling simple and complex actions.\n\nTypically, when we deal with smart homes, there are a set of simple, predefined actions, such as turning the lights off. HarmonicHomes aims to use artificial intelligence to give greater capabilities to smart homes.\n\nWe mimicked smart home functionalities with a simple UI and preset functions (ex. turn all the lights on, turn the lights yellow). For the backend, we used Fetch.ai\'s uAgents Python framework and Google\'s Gemini API to create three “agents”: the orchestrator, the tool-former, and a tool-verifier. These agents would work together to create complex actions if needed. For example, if a user asked to “turn the lights UCLA themed”, this is a complex action that we didn\'t predefine. The backend would, then, create a new tool/function that builds on top of preset abilities, to carry out the complex interaction. In this case, a new function “turn_light_UCLA_themed” would be created. This function would combine the simple functions it already knows to make this new function. This includes turning the lights in every room on and changing the colors of these lights to yellow and blue (UCLA theme). This new function can now be reused and can be used to build even more functions.\n\nWith Roomy, smart homes aren\'t limited to their initial set of simple commands. This project is only a mockup, but we hope it serves as a glimpse into how artificial intelligence can revolutionize the smart home industry.\n\nThis project won Fetch.ai\'s Company Challenge at UCLA\'s LAHacks 2024.\n\nView our winning Devpost submission and a live demonstration',
+    repoUrl: 'https://github.com/joshua-demo/simply-home',
+    extraLink: 'https://devpost.com/software/harmonichomes',
+    technologies: 'NextJS, Tailwind/ DaisyUI, Python, FastAPI, Google\'s Gemini API, uAgents'
+  },
+  {
     photoUrl: 'https://github.com/steeevin88/portfolio/assets/59713070/1a476f07-ae34-4527-bcce-55b9ede94d32',
     title: 'Safe And Slug',
     dateInfo: 'Created in January 2024',
