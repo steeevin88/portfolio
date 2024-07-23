@@ -7,7 +7,7 @@ import Link from 'next/link';
 export default function Home() {
   const [randomText, setRandomText] = useState('Working on projects!');
   const typewriterOptions = {
-    strings: ['Hey, I\'m Steven.'],
+    strings: ['Hey! My name\'s Steven.'],
     autoStart: true,
     loop: true,
     pauseFor: 30000,
@@ -15,12 +15,16 @@ export default function Home() {
 
   useEffect(() => {
     const textOptions = [
-      'Leetcoding',
-      'Working on projects',
-      'Practicing new interview techniques',
-      'Learning new technologies',
-      'Studying for my CS courses',
-      'Debugging',
+      'Leetcoding...',
+      'Working on projects!',
+      'Studying Neetcode 150...',
+      'Practicing new technologies!',
+      'Studying for my CS courses...',
+      'Building projects for SCE!',
+      'Scrolling through Linkedin...',
+      'Attending hackathons!',
+      'Fixing my resume...',
+      'Working out at the gym!',
     ];
 
     const interval = setInterval(() => {
@@ -38,7 +42,7 @@ export default function Home() {
         {/* tailwind styling in Typewriter component didn't work */}
         <Typewriter options={typewriterOptions}/>
       </div>
-      <div className="text-xl md:text-3xl">CS Major @ SJSU + aspiring software engineer</div>
+      <div className="text-xl md:text-3xl">CS Major @ San Jose State University, aspiring software engineer</div>
       <div className="text-xl md:text-3xl">As of right now, I am probably...</div>
       <div className="text-4xl md:text-5xl h-10 md:h-12 mb-6 lg:mb-0">
         <p>{randomText}</p>
