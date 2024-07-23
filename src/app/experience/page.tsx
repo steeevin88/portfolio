@@ -13,13 +13,39 @@ type Experience = {
 export default function Experience() {
   const experienceData : Experience[] = [
     {
+      photoUrl:'https://github.com/user-attachments/assets/74dffcf0-a90f-44c4-b3fb-f0ba89aec65b',
+      title:'Software Engineering Intern',
+      company:'United States Geological Survey (USGS)',
+      dateRange:'May 2024 - August 2024',
+      description:
+        <>
+          • Developed an internal earthquake response platform to assist scientists in visualizing real-time seismic activity <br/>
+          • Constructed interactive maps displaying GeoJSON data for 100+ earthquakes with Python&apos;s Folium and PyGDAL <br/>
+          • Administered application deployment to an internal Apache HTTP Server accessed by 15+ inter-team researchers <br/>
+          • Optimized search latency on large queries by &#126;20% by refactoring internal SQL scripts and adding B-Tree indexing <br/>
+        </>,
+      skills: 'Skills: HTML/CSS, React.js',
+    },
+    {
+      photoUrl:'https://github.com/user-attachments/assets/579c08d4-6674-4f6a-b81f-1dfd1eee54b1',
+      title:'Software Track Participant',
+      company:'IBM Accelerate',
+      dateRange:'June 2024 - August 2024',
+      description:
+        <>
+          • Participated in IBM&apos;s 8-week summer program focused on agile methodologies and cloud-native development <br/>
+          • Collaborated with engineers to develop scalable full-stack applications on IBM&apos;s cloud infrastructure <br/>
+        </>,
+      skills: 'Skills: HTML/CSS, React.js',
+    },
+    {
       photoUrl:'https://github.com/steeevin88/portfolio/assets/59713070/0738527b-ab14-4029-902a-4789e6a8dc60',
       title:'Software Engineering Intern',
       company:'SJSU College of Engineering',
       dateRange:'December 2023 - January 2024',
       description:
         <>
-          • Built a transit prediction service with Python’s FastAPI, 511 SF Bay’s Portal, and Docker for a club of 500+ users<br/>
+          • Built a transit prediction service with Python&apos;s FastAPI, 511 SF Bay&apos;s Portal, and Docker for a club of 500+ users<br/>
           • Used multithreading to update cached bus arrival data, minimizing API calls and request response time<br/>
           • Implemented API latency logging using Prometheus, providing performance metrics of 4000+ API calls monthly<br/>
           • Added custom Prometheus metrics for tracking API request latency and HTTP response codes<br/>
@@ -46,7 +72,7 @@ export default function Experience() {
       dateRange:'March 2023 - December 2023',
       description:
         <>
-          • Student grader and mentor for SJSU’s Introduction to Programming course (CS46A)<br/>
+          • Student grader and mentor for SJSU&apos;s Introduction to Programming course (CS46A)<br/>
           • Offered personalized 1:1 tutoring to students, tailoring explanations to meet individual learning styles and needs<br/>
           • Led 8+ supplemental sessions reinforcing course material, emphasizing fundamental programming concepts in Java<br/>
         </>,

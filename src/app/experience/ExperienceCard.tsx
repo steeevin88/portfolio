@@ -13,7 +13,7 @@ export default function ExperienceCard({ photoUrl, title, company, dateRange, de
         {/* Front Side */}
         <div>
           <div className="bg-gray-400 w-[90vw] md:w-[500px] h-[450px] rounded-lg flex flex-col justify-center gap-2 md:gap-6 border-black border-2">
-            <div className="flex justify-center align-top">
+            <div className="flex justify-center align-top px-6">
               <Image src={photoUrl} alt="logo" width="64" height="64" className="w-auto h-48 lg:h-72"/>
             </div>
             <div className="flex flex-col p-4">
