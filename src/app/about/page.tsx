@@ -11,9 +11,9 @@ export default function About() {
         <p className="text-xl">
           Thanks for visiting! My name is Steven Le.
           <br/><br/>
-          I&apos;m a junior at San Jose State University pursuing a bachelor&apos;s of science in computer science. I'm most interested in web development and DevOps, but I'm constantly exploring other areas of software engineering to find where my skills best apply.
+          I&apos;m a junior at San Jose State University pursuing a bachelor&apos;s of science in computer science. I&apos;m most interested in web development and DevOps, but I&apos;m constantly exploring other areas of software engineering to find where my skills best apply.
           <br/><br/>
-          Outside of school, you can find me leading projects for SJSU's Software and Computer Engineering Society (<Link href="https://sce.sjsu.edu/" className="underline">SCE</Link>), bringing ideas to life at hackathons, or working on personal projects.
+          Outside of school, you can find me leading projects for SJSU&apos;s Software and Computer Engineering Society (<Link href="https://sce.sjsu.edu/" className="underline">SCE</Link>), bringing ideas to life at hackathons, or working on personal projects.
           <br/><br/>
           I&apos;m working towards a career in software engineering, where I hope to advance projects that makes differences in people&apos;s lives. This website is intended to serve as a personal portfolio, documenting my progess towards that goal.
         </p>
