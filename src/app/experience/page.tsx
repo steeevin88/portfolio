@@ -13,6 +13,17 @@ type Experience = {
 export default function Experience() {
   const experienceData : Experience[] = [
     {
+      photoUrl:'https://github.com/user-attachments/assets/ab9c455c-edc7-449c-bf61-06a16601f02a',
+      title:'Software Engineering Intern (Incoming)',
+      company:'Fetch.ai',
+      dateRange:'August 2024 - December 2024',
+      description:
+        <>
+          • Working with software engineers in the development of autonomous AI agents and decentralized AI solutions <br/>
+        </>,
+      skills: '',
+    },
+    {
       photoUrl:'https://github.com/user-attachments/assets/74dffcf0-a90f-44c4-b3fb-f0ba89aec65b',
       title:'Software Engineering Intern',
       company:'United States Geological Survey (USGS)',
