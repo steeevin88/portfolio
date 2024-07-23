@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <nav className={classNames("bg-[#7C909A] fixed z-10 text-xl top-0 w-full lg:flex overflow-hidden lg:justify-between lg:items-center px-8 lg:px-20 xl:px-52 py-2 lg:py-6 pb-6 transition-all duration-200 ease-in-out", {"max-h-screen lg:max-h-20": toggled, "max-h-20": !toggled})}>
       <div className="flex justify-between">
-        <Link className="flex gap-2 items-center" href="/">
+        <Link className="flex gap-2 items-center" href="#home">
           <Image src={logo} alt="logo" className="w-12 lg:w-14 h-16 lg:h-20 p-2" width="64" height="64"/>
         </Link>
         <div className="flex items-center lg:hidden" onClick={() => setToggled(!toggled)}>
@@ -23,7 +23,9 @@ export default function Navbar() {
         <Link href="#experience" onClick={() => setToggled(!toggled)}>Experience</Link>
         <Link href="#projects" onClick={() => setToggled(!toggled)}>Projects</Link>
       </div>
-      <Link href="https://drive.google.com/file/d/18GNlxTva-8pbxtfJufObDr2tN-0hhnLa/view?usp=drive_link" target="_blank" rel="noopener noreferrer"><button className="btn rounded-lg">Resume</button></Link>
+      <Link href="https://drive.google.com/file/d/18GNlxTva-8pbxtfJufObDr2tN-0hhnLa/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <button className="btn bg-gray-300 border-none rounded-lg">Resume</button>
+      </Link>
     </nav>
   )
 }

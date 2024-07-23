@@ -99,7 +99,7 @@ export default function Projects() {
         })}
       </div>
       <Link href='#home' className="text-center">
-        <button className="btn text-center w-44 mb-2 rounded-lg">To Home</button>
+        <button className="btn bg-gray-300 border-none text-center w-44 mb-2 rounded-lg">To Home</button>
       </Link>
     </div>
   )

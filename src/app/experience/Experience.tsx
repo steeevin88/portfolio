@@ -123,7 +123,7 @@ export default function Experience() {
         })}
       </div>
       <Link href='#projects' className="md:hidden text-center">
-        <button className="btn text-center w-44 rounded-lg">View Projects</button>
+        <button className="btn bg-gray-300 border-none text-center w-44 rounded-lg">View Projects</button>
       </Link>
     </div>
   );
