@@ -12,7 +12,7 @@ export default function Navbar() {
     <nav className={classNames("bg-[#7C909A] fixed z-10 text-xl top-0 w-full lg:flex overflow-hidden lg:justify-between lg:items-center px-8 lg:px-20 xl:px-52 py-2 lg:py-6 pb-6 transition-all duration-200 ease-in-out", {"max-h-screen lg:max-h-20": toggled, "max-h-20": !toggled})}>
       <div className="flex justify-between">
         <Link className="flex gap-2 items-center" href="#home">
-          <Image src={logo} alt="logo" className="w-12 lg:w-14 h-16 lg:h-20 p-2" width="64" height="64"/>
+          <Image src={logo} alt="logo" className="w-14 lg:w-24 h-16 lg:h-20 p-2" width="64" height="64"/>
         </Link>
         <div className="flex items-center lg:hidden" onClick={() => setToggled(!toggled)}>
           <IoMenu className="h-8 w-8"/>
