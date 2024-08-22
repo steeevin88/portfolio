@@ -14,7 +14,7 @@ export default function Experience() {
   const experienceData : Experience[] = [
     {
       photoUrl:'https://github.com/user-attachments/assets/ab9c455c-edc7-449c-bf61-06a16601f02a',
-      title:'Software Engineering Intern (Incoming)',
+      title:'Software Engineering Intern',
       company:'Fetch.ai',
       dateRange:'August 2024 - December 2024',
       description:
@@ -27,7 +27,7 @@ export default function Experience() {
       photoUrl:'https://github.com/user-attachments/assets/74dffcf0-a90f-44c4-b3fb-f0ba89aec65b',
       title:'Software Engineering Intern',
       company:'United States Geological Survey (USGS)',
-      dateRange:'May 2024 - August 2024',
+      dateRange:'May 2024 - September 2024',
       description:
         <>
           • Developed an internal earthquake response platform to assist scientists in visualizing real-time seismic activity <br/>
