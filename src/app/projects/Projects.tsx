@@ -43,8 +43,9 @@ const projectsData: Project[] = [
     photoUrl: 'https://github.com/steeevin88/portfolio/assets/59713070/2ffc648d-abec-4e6e-be8a-d8329eeb72e8',
     title: 'SCEta',
     dateInfo: 'Created in December 2023',
-    description: 'Transit predictions application made for SJSU\'s Software and Computer Engineering Society (SCE) as part of it\'s collaborative winter internship program.\n\nRetrieves data from SF Bay\'s Open Data 511 API from nearby transit stations to SJSU (ex. VTA, BART), allowing SCE club members to view transit arrival times on the club website.',
+    description: 'Transit predictions application made for SJSU\'s Software and Computer Engineering Society (SCE) as part of it\'s collaborative winter internship program.\n\nRetrieves data from SF Bay\'s Open Data 511 API from nearby transit stations to SJSU (ex. VTA, BART), allowing SCE club members to view transit arrival times on the club website.\n\n Get local transit predictions to SJSU through SCEta by clicking',
     repoUrl: 'https://github.com/SCE-Development/SCEta',
+    extraLink: "https://sce.sjsu.edu/transit/",
     technologies: 'React, Tailwind/ DaisyUI, Python, 511 API, Docker'
   },
   {
