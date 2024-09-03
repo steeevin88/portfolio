@@ -13,6 +13,17 @@ type Experience = {
 export default function Experience() {
   const experienceData : Experience[] = [
     {
+      photoUrl:'https://github.com/user-attachments/assets/678550f1-4cb1-4593-bfba-eed3a3b8f204',
+      title:'Software Engineering Intern (Incoming)',
+      company:'Capital One',
+      dateRange:'June 2025',
+      description:
+        <>
+          • Summer 2025 TIP Intern 🏦 <br/>
+        </>,
+      skills: '',
+    },
+    {
       photoUrl:'https://github.com/user-attachments/assets/ab9c455c-edc7-449c-bf61-06a16601f02a',
       title:'Software Engineering Intern',
       company:'Fetch.ai',
@@ -21,7 +32,7 @@ export default function Experience() {
         <>
           • Working with software engineers in the development of autonomous AI agents and decentralized AI solutions <br/>
         </>,
-      skills: '',
+      skills: 'Python',
     },
     {
       photoUrl:'https://github.com/user-attachments/assets/74dffcf0-a90f-44c4-b3fb-f0ba89aec65b',
@@ -32,10 +43,10 @@ export default function Experience() {
         <>
           • Developed an internal earthquake response platform to assist scientists in visualizing real-time seismic activity <br/>
           • Constructed interactive maps displaying GeoJSON data for 100+ earthquakes with Python&apos;s Folium and PyGDAL <br/>
-          • Administered application deployment to an internal Apache HTTP Server accessed by 15+ inter-team researchers <br/>
-          • Optimized search latency on large queries by &#126;20% by refactoring internal SQL scripts and adding B-Tree indexing <br/>
+          • Administered application deployment to an internal Rocky Linux Server accessed by 15+ inter-team researchers <br/>
+          • Reduced search latency by approximately &#126;20% by optimizing AutoSSH and SQLAlchemy connection settings <br/>
         </>,
-      skills: 'Skills: HTML/CSS, React.js',
+      skills: 'Skills: HTML/CSS, React.js, Python, Folium, Docker, NGINX',
     },
     {
       photoUrl:'https://github.com/user-attachments/assets/579c08d4-6674-4f6a-b81f-1dfd1eee54b1',
@@ -45,9 +56,10 @@ export default function Experience() {
       description:
         <>
           • Participated in IBM&apos;s 8-week summer program focused on agile methodologies and cloud-native development <br/>
+          • Redesigned frontend test suites written in Jest to ensure proper data retrieval from Express.js backends <br/>
           • Collaborated with engineers to develop scalable full-stack applications on IBM&apos;s cloud infrastructure <br/>
         </>,
-      skills: 'Skills: HTML/CSS, React.js',
+      skills: 'Skills: HTML/CSS, React.js, Jest',
     },
     {
       photoUrl:'https://github.com/steeevin88/portfolio/assets/59713070/0738527b-ab14-4029-902a-4789e6a8dc60',
