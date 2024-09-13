@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`text-black ${inter.className}`}>
+      <body className={`text-black ${inter.className} scrollbar`}>
         <Navbar/>
         {children}
         <Footer/>

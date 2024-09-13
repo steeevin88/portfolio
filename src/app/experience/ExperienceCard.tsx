@@ -32,7 +32,7 @@ export default function ExperienceCard({ photoUrl, title, company, dateRange, de
 
         {/* Back Side */}
         <div>
-          <div className="bg-gray-400 w-[90vw] md:w-[450px] h-[450px] rounded-lg flex flex-col p-4 text-left gap-6 overflow-auto border-black border-2">
+          <div className="bg-gray-400 w-[90vw] md:w-[450px] h-[450px] rounded-lg flex flex-col p-4 text-left gap-6 overflow-auto border-black border-2 scrollbar">
             <div>
               <div className="text-l md:text-2xl font-bold">{title}</div>
               <div className="text-l md:text-xl">{company}</div>
