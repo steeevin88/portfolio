@@ -127,7 +127,7 @@ export default function Experience() {
           <button className="btn text-center w-44 rounded-lg">View Projects</button>
         </Link>
       </div>
-      <div className="flex overflow-x-auto md:flex-wrap md:justify-center">
+      <div className="flex overflow-x-auto flex-wrap justify-center">
         {experienceData.map((experience, index) => {
           return (
             <ExperienceCard {...experience} key={index}/>

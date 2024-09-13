@@ -92,7 +92,7 @@ export default function Projects() {
         <div className="text-5xl lg:text-6xl">PROJECTS</div>
         <div className="text-xl px-8 lg:px-12">A few things that I&apos;ve worked on...</div>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 justify-space-between gap-8">
+      <div className="flex flex-wrap justify-center gap-8">
         {projectsData.map((project, index) => {
           return (
             <ProjectCard {...project} key={index}/>
