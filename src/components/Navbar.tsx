@@ -8,9 +8,9 @@ export default function Navbar() {
   const [toggled, setToggled] = useState(false);
 
   return (
-    <nav className={classNames("bg-[#7C909A] lg:flex lg:flex-row lg:justify-between fixed z-10 text-lg w-full overflow-hidden px-8 pt-2 lg:py-6 lg:pb-12 transition-all duration-200 ease-in-out", {"max-h-screen lg:max-h-10": toggled, "max-h-10": !toggled})}>
+    <nav className={classNames("bg-[#7C909A] lg:flex lg:flex-row lg:justify-between fixed z-10 text-lg w-full overflow-hidden px-8 pt-2 lg:py-6 lg:pb-12 transition-all duration-200 ease-in-out", {"max-h-screen lg:max-h-12": toggled, "max-h-12": !toggled})}>
       <div className="flex items-center lg:hidden" onClick={() => setToggled(!toggled)}>
-        <IoMenu className="h-10 w-10"/>
+        <IoMenu className="h-8 w-8"/>
       </div>
       {/* Social Icons */}
       <div className="hidden lg:flex flex-row gap-4">
