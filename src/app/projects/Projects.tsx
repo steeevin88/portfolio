@@ -54,7 +54,7 @@ const projectsData: Project[] = [
     dateInfo: 'Created in October 2023',
     description: 'NextJS application that allows users to coordinate events with friends by allowing them to upload personal .ics files from modern calendar applications (ex. Google Calendar). Users can register for accounts and add friends to access their availabilities and schedule (in-person) meetings. Additionally, users can be recommended events based on their preferences and their (stored) meeting history.\n\nThis project was a submission to CalHacks 2023.\n\nView the Devpost submission',
     repoUrl: 'https://github.com/steeevin88/schedulerAI',
-    extraLink: 'https://devpost.com/software/safe-and-slug',
+    extraLink: 'https://devpost.com/software/hum-ex-scheduler',
     technologies: 'NextJS, Tailwind, Prisma, CockroachDB, TogetherAI'
   },
   {
