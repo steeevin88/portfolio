@@ -32,7 +32,7 @@ export default function Experience() {
         <>
           • Working with software engineers in the development of autonomous AI agents and decentralized AI solutions <br/>
         </>,
-      skills: 'Python',
+      skills: 'Skills: Python',
     },
     {
       photoUrl:'https://github.com/user-attachments/assets/74dffcf0-a90f-44c4-b3fb-f0ba89aec65b',

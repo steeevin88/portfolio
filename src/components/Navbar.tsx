@@ -31,7 +31,7 @@ export default function Navbar() {
         <Link href="#about" onClick={() => setToggled(!toggled)}>About</Link>
         <Link href="#experience" onClick={() => setToggled(!toggled)}>Experience</Link>
         <Link href="#projects" onClick={() => setToggled(!toggled)}>Projects</Link>
-        <Link href="https://drive.google.com/file/d/1dB6AlarknwgvHGMbZal8BAXrUnX5cYvn/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Resume</Link>
+        <Link href="/steven_le_resume.pdf" target="_blank" rel="noopener noreferrer">Resume</Link>
       </div>
       {/* Social Icons for Smaller Screens*/}
       <div className="lg:hidden flex flex-row gap-4 mb-3">
