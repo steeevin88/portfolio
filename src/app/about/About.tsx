@@ -25,7 +25,7 @@ export default function About() {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center lg:col-span-2 lg:px-10 pb-10">
-        <Image src="https://github.com/user-attachments/assets/2ca2853c-3ade-4e39-8ec3-541bd45d10a3" alt="steven" width="64" height="64" unoptimized className="w-full lg:min-w-96 h-auto border-4 border-black rounded-lg"/>
+        <Image src="https://github.com/user-attachments/assets/60529a83-695f-43e1-a54b-7c826b7324a2" alt="steven" width="64" height="64" unoptimized className="w-full lg:min-w-96 h-auto border-4 border-black rounded-lg"/>
       </div>
     </div>
   );

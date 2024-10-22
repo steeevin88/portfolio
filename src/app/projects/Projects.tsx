@@ -13,6 +13,15 @@ type Project = {
 
 const projectsData: Project[] = [
   {
+    photoUrl: 'https://github.com/user-attachments/assets/968784df-fd42-4566-8e1a-5209a6ad91b6',
+    title: 'AngelShot',
+    dateInfo: 'Created in October 2024',
+    description: 'Whether it\'s at a college party, a public outing, or during a simple stroll downtown, individuals often find themselves in uncomfortable, unwanted situations due to unwanted attention. In these moments, a discreet way to seek help is crucial.\n\nIn the bartending world, this concept is known as an "angel shot"—a code word or drink order that discreetly signals to staff that a customer needs assistance.\n\nPhone calls are a powerful tool in these uncomfortable situations, as they not only deter unwanted attention by creating an external conversation but also offer a lifeline to contact emergency services or trusted individuals. Thus, they server as angel shots outside of a bartending context.\n\nBut what if no one is available to answer the call? How can individuals ensure they\'ll have someone to talk to when they need help the most?\n\n At CalHacks 2024, we built AngelShot: an application that simulates a realistic phone call a variety of user-customizable AI-based assistants\n\nUsers will pre-define assistants that they can request a call from whenever they\'re placed in an unwanted situation. These assistants can take on roles; for instance, user\'s can create an assistant meant to be \'an uncle that they haven\'t seen in awhile\'. Additionally, assistants can be given a conversation starter. This could range from topics like sports, gardening, etc... anything that the user will feel comfortable talking about in an uncomfortable situation. \n\nWhen an individual is in an uncomfortable situation, they can request a call from any of their created assistants to start a normal conversation. However, with each response, the assistant provides the user two discreet, context-based code words.\n\nThese code words trigger pre-configured safety actions of two levels. For example, in a gardening-themed conversation, the assistant may provide the words "monstera" and "weeding".\nIf the user says the first keyword "monstera" in their response, the assistant will know to share the user\'s live conversation with emergency contacts.If the user says the second keyword "weeding" in their response, the assistant will know to forward you to emergency services instantly.\n\n View our Devpost subsmission or try out AngelShot for yourself',
+    repoUrl: 'https://github.com/mikieyx/SafeTalk',
+    extraLink: 'https://devpost.com/software/angelshot',
+    technologies: 'Next.js, TypeScript, shadcn, VAPI, ElevenLabs, Deepgram, Twilio, MongoDB'
+  },
+  {
     photoUrl: 'https://github.com/user-attachments/assets/5bc50f30-46af-47cb-b924-796868fc9f64',
     title: 'Pantry Patrol',
     dateInfo: 'Created in April 2024',
