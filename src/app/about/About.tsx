@@ -5,7 +5,7 @@ import { ChevronDown } from 'lucide-react';
 
 export default function About() {
   return (
-    <section className="min-h-screen py-16 px-4 sm:px-8 lg:px-16 bg-gradient-to-b from-gray-300 to-[#7C909A] flex flex-col justify-center" id="about">
+    <section className="min-h-screen py-24 px-4 sm:px-8 lg:px-16 bg-gradient-to-b from-gray-300 to-[#7C909A] flex flex-col justify-center" id="about">
       <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 max-w-7xl mx-auto">
         <div className="flex flex-col lg:col-span-3 gap-6 md:gap-8">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold">ABOUT</h2>

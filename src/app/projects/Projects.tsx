@@ -189,7 +189,7 @@ function ProjectCard(props: Project) {
 
 export default function Projects() {
   return (
-    <section className="min-h-screen bg-gradient-to-b from-gray-300 to-[#7C909A] py-16 px-4 sm:px-6 lg:px-8" id="projects">
+    <section className="min-h-screen bg-gradient-to-b from-gray-300 to-[#7C909A] py-24 px-4 sm:px-6 lg:px-8" id="projects">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 mb-4">PROJECTS</h2>

@@ -111,7 +111,7 @@ export default function Experience() {
   ];
 
   return (
-    <section className="min-h-screen py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#7C909A] to-gray-300" id="experience">
+    <section className="min-h-screen py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#7C909A] to-gray-300" id="experience">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 mb-4">EXPERIENCES</h2>
