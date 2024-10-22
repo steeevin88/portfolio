@@ -1,5 +1,8 @@
+'use client';
+import { useState, useEffect, useRef } from "react";
+import Image from 'next/image';
 import Link from "next/link";
-import ProjectCard from "./ProjectCard";
+import { ChevronDown, X, ExternalLink, Github } from 'lucide-react';
 
 type Project = {
   photoUrl: string;
@@ -93,24 +96,119 @@ const projectsData: Project[] = [
   }
 ];
 
+function ProjectModalComponent({photoUrl, title, dateInfo, description, repoUrl, extraLink, technologies}: Project) {
+  const [isOpen, setIsOpen] = useState(false);
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleOutsideClick = (event: MouseEvent) => {
+      if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener('mousedown', handleOutsideClick);
+      document.addEventListener('keydown', handleEscape);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick);
+      document.removeEventListener('keydown', handleEscape);
+    };
+  }, [isOpen]);
+
+  return (
+    <>
+      <button
+        onClick={() => setIsOpen(true)}
+        className="bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition duration-300"
+      >
+        View Details
+      </button>
+      {isOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div ref={modalRef} className="bg-white rounded-lg shadow-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <div className="p-6">
+              <div className="flex justify-between items-start mb-4">
+                <h2 className="text-3xl font-bold text-gray-800">{title}</h2>
+                <button onClick={() => setIsOpen(false)} className="text-gray-500 hover:text-gray-700">
+                  <X size={24} />
+                </button>
+              </div>
+              <p className="text-gray-600 mb-4">{dateInfo}</p>
+              <div className="prose max-w-none mb-6">
+                {description.split('\n').map((paragraph, index) => (
+                  <p key={index} className="mb-4">{paragraph}</p>
+                ))}
+              </div>
+              <div className="flex flex-wrap gap-4 mb-6">
+                <Link href={repoUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded-md transition duration-300">
+                  <Github size={20} />
+                  View on GitHub
+                </Link>
+                {extraLink && (
+                  <Link href={extraLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded-md transition duration-300">
+                    <ExternalLink size={20} />
+                    View Project
+                  </Link>
+                )}
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Technologies Used</h3>
+                <p className="text-gray-700">{technologies}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}
+
+function ProjectCard(props: Project) {
+  return (
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
+      <div className="h-48 bg-gray-200 flex items-center justify-center p-4">
+        <Image src={props.photoUrl} alt={props.title} width={500} height={400} className="object-contain max-h-full" />
+      </div>
+      <div className="p-6">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">{props.title}</h3>
+        <p className="text-gray-600 mb-4">{props.dateInfo}</p>
+        <ProjectModalComponent {...props} />
+      </div>
+    </div>
+  );
+}
 
 export default function Projects() {
   return (
-    <div className="min-h-[100vh] bg-gradient-to-b from-gray-300 to-[#7C909A] flex flex-col pt-[17.5vh] xl:px-24 gap-8 items-center" id="projects">
-      <div className="flex flex-col px-8 lg:px-12 text-center gap-4">
-        <div className="text-5xl lg:text-6xl">PROJECTS</div>
-        <div className="text-xl px-8 lg:px-12">A few things that I&apos;ve worked on...</div>
+    <section className="min-h-screen bg-gradient-to-b from-gray-300 to-[#7C909A] py-16 px-4 sm:px-6 lg:px-8" id="projects">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 mb-4">PROJECTS</h2>
+          <p className="text-xl text-gray-600">A few things that I&apos;ve worked on...</p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projectsData.map((project, index) => (
+            <ProjectCard key={index} {...project} />
+          ))}
+        </div>
+        <div className="mt-12 text-center">
+          <Link href='#home'>
+            <button className="bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+              Back to Home
+            </button>
+          </Link>
+        </div>
       </div>
-      <div className="flex flex-wrap justify-center gap-8">
-        {projectsData.map((project, index) => {
-          return (
-            <ProjectCard {...project} key={index}/>
-          );
-        })}
-      </div>
-      <Link href='#home' className="text-center">
-        <button className="btn bg-gray-300 border-none text-center w-44 mb-2 rounded-lg">To Home</button>
-      </Link>
-    </div>
-  )
+      <ChevronDown className="animate-bounce mt-12 w-8 h-8 mx-auto text-gray-600" />
+    </section>
+  );
 }

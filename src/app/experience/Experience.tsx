@@ -1,28 +1,21 @@
+'use client';
 import Link from "next/link";
-import ExperienceCard from './ExperienceCard';
+import { ChevronDown, ChevronRight } from 'lucide-react';
+import { useState } from 'react';
+import ReactCardFlip from 'react-card-flip';
+import Image from 'next/image';
 
 type Experience = {
-  photoUrl : string;
-  title : string;
+  photoUrl: string;
+  title: string;
   company: string;
-  dateRange : string;
-  description : React.ReactNode;
-  skills? : string;
+  dateRange: string;
+  description: React.ReactNode;
+  skills?: string;
 }
 
 export default function Experience() {
-  const experienceData : Experience[] = [
-    // {
-    //   photoUrl:'https://github.com/user-attachments/assets/678550f1-4cb1-4593-bfba-eed3a3b8f204',
-    //   title:'Software Engineering Intern (Incoming)',
-    //   company:'Capital One',
-    //   dateRange:'June 2025',
-    //   description:
-    //     <>
-    //       • Summer 2025 TIP Intern 🏦 <br/>
-    //     </>,
-    //   skills: '',
-    // },
+  const experienceData: Experience[] = [
     {
       photoUrl:'https://github.com/user-attachments/assets/ab9c455c-edc7-449c-bf61-06a16601f02a',
       title:'Software Engineering Intern',
@@ -118,26 +111,78 @@ export default function Experience() {
   ];
 
   return (
-    <div className="min-h-[100vh] bg-gradient-to-b from-[#7C909A] to-gray-300 flex flex-col lg:px-24 gap-12 py-1 pt-[17.5vh]" id="experience">
-      <div className="flex flex-row justify-between px-8 lg:px-12">
-        <div className="flex flex-col">
-          <div className="text-center text-5xl lg:text-left lg:text-6xl">EXPERIENCES</div>
-          <div className="text-md lg:text-left lg:text-md pl-1 md:hidden">Scroll to view more...</div>
+    <section className="min-h-screen py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#7C909A] to-gray-300" id="experience">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 mb-4">EXPERIENCES</h2>
+          <p className="text-xl text-gray-600">My professional journey so far</p>
         </div>
-        <Link href='#projects' className="hidden md:block">
-          <button className="btn text-center w-44 rounded-lg">View Projects</button>
-        </Link>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {experienceData.map((experience, index) => (
+            <ExperienceCard key={index} {...experience} />
+          ))}
+        </div>
+        <div className="mt-12 text-center">
+          <Link href='#projects'>
+            <button className="bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+              View Projects
+            </button>
+          </Link>
+        </div>
       </div>
-      <div className="flex overflow-x-auto flex-wrap justify-center">
-        {experienceData.map((experience, index) => {
-          return (
-            <ExperienceCard {...experience} key={index}/>
-          );
-        })}
-      </div>
-      <Link href='#projects' className="md:hidden text-center">
-        <button className="btn bg-gray-300 border-none text-center w-44 rounded-lg">View Projects</button>
-      </Link>
+      <ChevronDown className="animate-bounce mt-12 w-8 h-8 mx-auto text-gray-600" />
+    </section>
+  );
+}
+
+function ExperienceCard({ photoUrl, title, company, dateRange, description, skills }: { photoUrl: string; title: string; company: string; dateRange: string; description: React.ReactNode; skills?: string }) {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleClick = () => {
+    setIsFlipped(!isFlipped);
+  };
+
+  return (
+    <div className="w-full max-w-sm mx-auto mb-2 cursor-pointer h-[400px]" onClick={handleClick}>
+      <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
+        {/* Front Side */}
+        <div className="w-full h-[400px] bg-white shadow-lg rounded-lg overflow-hidden flex flex-col text-center">
+          <div className="h-48 bg-gray-100 flex items-center justify-center p-4">
+            <Image
+              src={photoUrl}
+              alt={`${company} logo`}
+              width={350}
+              height={350}
+              className="object-contain max-h-full"
+            />
+          </div>
+          <div className="p-6 flex-grow">
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">{title}</h3>
+            <p className="text-gray-600 mb-2">{company}</p>
+            <p className="text-sm text-gray-500">{dateRange}</p>
+          </div>
+          <div className="px-6 py-4 bg-gray-50 flex justify-between items-center mt-auto">
+            <span className="text-sm text-gray-600">Click to view details</span>
+            <ChevronRight className="w-5 h-5 text-gray-400" />
+          </div>
+        </div>
+
+        {/* Back Side */}
+        <div className="w-full h-[400px] bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
+          <div className="p-6 flex-grow overflow-y-auto">
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">{title}</h3>
+            <p className="text-gray-600 mb-4">{company}</p>
+            <div className="text-sm text-gray-700 space-y-2 mb-4">{description}</div>
+            {skills && (
+              <div className="text-sm text-gray-600 font-medium mt-4">{skills}</div>
+            )}
+          </div>
+          <div className="px-6 py-4 bg-gray-50 flex justify-between items-center mt-auto">
+            <span className="text-sm text-gray-600">Click to go back</span>
+            <ChevronRight className="w-5 h-5 text-gray-400 transform rotate-180" />
+          </div>
+        </div>
+      </ReactCardFlip>
     </div>
   );
 }
