@@ -27,7 +27,7 @@ export default function About() {
         </div>
         <div className="flex flex-col justify-center items-center lg:col-span-2">
           <Image
-            src="https://github.com/user-attachments/assets/60529a83-695f-43e1-a54b-7c826b7324a2"
+            src="https://github.com/user-attachments/assets/2ca2853c-3ade-4e39-8ec3-541bd45d10a3"
             alt="steven"
             width={400}
             height={400}
