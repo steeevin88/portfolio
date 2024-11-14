@@ -14,6 +14,7 @@
     "classnames": "^2.5.1",
     "lucide-react": "^0.453.0",
     "next": "14.1.0",
+    "posthog-js": "^1.184.2",
     "react": "^18",
     "react-card-flip": "^1.2.2",
     "react-dom": "^18",
