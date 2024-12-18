@@ -16,6 +16,17 @@ type Experience = {
 
 export default function Experience() {
   const experienceData: Experience[] = [
+    // {
+    //   photoUrl:'https://github.com/user-attachments/assets/cdc64574-a5a7-454b-87e9-0c445c661e8c',
+    //   title:'Software Engineering Intern',
+    //   company:'Meta',
+    //   dateRange:'Incoming Summer 2025',
+    //   description:
+    //     <>
+    //       • Menlo Park 🏠 <br/>
+    //     </>,
+    //   skills: '',
+    // },
     {
       photoUrl:'https://github.com/user-attachments/assets/ab9c455c-edc7-449c-bf61-06a16601f02a',
       title:'Software Engineering Intern',
@@ -23,8 +34,7 @@ export default function Experience() {
       dateRange:'August 2024 - December 2024',
       description:
         <>
-          • Working with software engineers in developing Python&apos;s uAgents framework, supporting autonomous AI agent solutions <br/>
-          • Developing an NPM package for the uAgents framework, enhancing cross-platform compatibility for TypeScript users <br/>
+          • Developed an NPM package for the uAgents framework, enhancing cross-platform compatibility for TypeScript users <br/>
         </>,
       skills: 'Skills: Python, TypeScript, Jest, CI/CD',
     },
