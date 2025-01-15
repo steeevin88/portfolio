@@ -16,17 +16,17 @@ type Experience = {
 
 export default function Experience() {
   const experienceData: Experience[] = [
-    // {
-    //   photoUrl:'https://github.com/user-attachments/assets/cdc64574-a5a7-454b-87e9-0c445c661e8c',
-    //   title:'Software Engineering Intern',
-    //   company:'Meta',
-    //   dateRange:'Incoming Summer 2025',
-    //   description:
-    //     <>
-    //       • Menlo Park 🏠 <br/>
-    //     </>,
-    //   skills: '',
-    // },
+    {
+      photoUrl:'https://github.com/user-attachments/assets/cdc64574-a5a7-454b-87e9-0c445c661e8c',
+      title:'Software Engineering Intern',
+      company:'Meta',
+      dateRange:'Incoming Summer 2025',
+      description:
+        <>
+          • Menlo Park 🏠<br/>
+        </>,
+      skills: '',
+    },
     {
       photoUrl:'https://github.com/user-attachments/assets/ab9c455c-edc7-449c-bf61-06a16601f02a',
       title:'Software Engineering Intern',
@@ -34,7 +34,7 @@ export default function Experience() {
       dateRange:'August 2024 - December 2024',
       description:
         <>
-          • Developed an NPM package for the uAgents framework, enhancing cross-platform compatibility for TypeScript users <br/>
+          • Worked on a TypeScript implementation of Fetch.ai&apos;s uAgents framework 🚀<br/>
         </>,
       skills: 'Skills: Python, TypeScript, Jest, CI/CD',
     },
@@ -45,10 +45,7 @@ export default function Experience() {
       dateRange:'May 2024 - September 2024',
       description:
         <>
-          • Developed an internal earthquake response platform to assist scientists in visualizing real-time seismic activity <br/>
-          • Constructed interactive maps displaying GeoJSON data for 100+ earthquakes with Python&apos;s Folium and PyGDAL <br/>
-          • Administered application deployment to an internal Rocky Linux Server accessed by 15+ inter-team researchers <br/>
-          • Reduced search latency by approximately &#126;20% by optimizing AutoSSH and SQLAlchemy connection settings <br/>
+          • Built an earthquake response platform for the Crustal Deformation Team 🌎<br/>
         </>,
       skills: 'Skills: HTML/CSS, React.js, Python, Folium, Docker, NGINX',
     },
@@ -59,9 +56,7 @@ export default function Experience() {
       dateRange:'June 2024 - August 2024',
       description:
         <>
-          • Participated in IBM&apos;s 8-week summer program focused on agile methodologies and cloud-native development <br/>
-          • Redesigned frontend test suites written in Jest to ensure proper data retrieval from Express.js backends <br/>
-          • Collaborated with engineers to develop scalable full-stack applications on IBM&apos;s cloud infrastructure <br/>
+          • Participated in IBM&apos;s 8-week summer program focused on full-stack development 🖥️<br/>
         </>,
       skills: 'Skills: HTML/CSS, React.js, Jest',
     },
@@ -72,10 +67,7 @@ export default function Experience() {
       dateRange:'December 2023 - January 2024',
       description:
         <>
-          • Built a transit prediction service with Python&apos;s FastAPI, 511 SF Bay&apos;s Portal, and Docker for a club of 500+ users<br/>
-          • Used multithreading to update cached bus arrival data, minimizing API calls and request response time<br/>
-          • Implemented API latency logging using Prometheus, providing performance metrics of 4000+ API calls monthly<br/>
-          • Added custom Prometheus metrics for tracking API request latency and HTTP response codes<br/>
+          • Created a transit prediction service (SCEta) for a club of 500+ students 🚌<br/>
         </>,
       skills: 'Skills: Docker, React.js, TailwindCSS, FastAPI, Prometheus',
     },
@@ -86,9 +78,7 @@ export default function Experience() {
       dateRange:'March 2023 - Present',
       description:
         <>
-          • Directed team of development officers in the complete overhaul of the Projects page UI for the club website <br/>
-          • Refactoring club website to utilize Next.js, improving search engine optimization and user experience <br/>
-          • Revamped printing system to reset printed page counts accurately, impacting over 100 club members <br/>
+          • Developing projects with aspiring software engineering students 🧠<br/>
         </>,
       skills: 'Skills: Git, HTML/CSS, Next.js, React.js, TailwindCSS, Docker',
     },
@@ -100,8 +90,6 @@ export default function Experience() {
       description:
         <>
           • Student grader and mentor for SJSU&apos;s Introduction to Programming course (CS46A)<br/>
-          • Offered personalized 1:1 tutoring to students, tailoring explanations to meet individual learning styles and needs<br/>
-          • Led 8+ supplemental sessions reinforcing course material, emphasizing fundamental programming concepts in Java<br/>
         </>,
       skills: 'Skills: Java, Eclipse IDE',
     },
@@ -112,9 +100,7 @@ export default function Experience() {
       dateRange:'June 2022 - August 2022',
       description:
         <>
-          • Partook in a 4-week CS summer program alongside Google engineers<br/>
-          • Completed a project-based JavaScript processing curriculum, configuring 16 introductory coding projects<br/>
-          • Reviewed product design, resume development, and technical interview techniques across 10+ workshops<br/>
+          • Partook in a 4-week computer science program led by software engineers at Google<br/>
         </>,
         skills: 'Skills: HTML/CSS, Bulma (CSS Framework), Javascript',
     },
