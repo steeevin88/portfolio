@@ -16,6 +16,15 @@ type Project = {
 
 const projectsData: Project[] = [
   {
+    photoUrl: 'https://github.com/user-attachments/assets/b42cc29a-3156-4556-93ca-5e9c60c512c3',
+    title: 'lmk',
+    dateInfo: 'Created in February 2025',
+    description: 'In today\'s world, staying informed about local incidents and safety concerns is crucial. Whether it is a house fire, suspicious activity, or even something as extreme as a nuclear threat, timely updates can help people make better decisions for their safety. However, many incidents go unreported or fail to reach the people who need to know. Without an efficient way to share and access real-time alerts, communities are left vulnerable to unforeseen dangers.\n\nThis inspired us to create lmk, a platform that enables community-driven safety reporting. Rather than relying solely on official emergency channels, lmk allows people to contribute real-time updates about local incidents, making it easier for others to stay informed. The platform provides an interactive way for users to track reports, assess potential risks, and respond accordingly. \n\nlmk is a real-time incident tracking platform that allows users to report and view local incidents through a dynamic map-based interface. Users can submit reports detailing incidents such as fires, suspicious activity, and public disturbances, providing key details like location, description, and urgency level. Each report is processed by an AI system that categorizes the severity and determines the appropriate response level.\n\nThrough an interactive Mapbox interface, users can view incidents near them, filter reports by severity, and receive warnings if an event poses a significant risk. The AI-driven system helps streamline information by summarizing key details, ensuring that users can quickly assess and respond to nearby events.',
+    repoUrl: 'https://github.com/NicholasLe04/hackforhumanity',
+    extraLink: 'https://lmk-kappa.vercel.app/',
+    technologies: 'Next.js, TypeScript, shadcn, Supabase, Mapbox'
+  },
+  {
     photoUrl: 'https://github.com/user-attachments/assets/968784df-fd42-4566-8e1a-5209a6ad91b6',
     title: 'AngelShot',
     dateInfo: 'Created in October 2024',
