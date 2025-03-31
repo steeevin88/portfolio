@@ -37,7 +37,6 @@ export default function About() {
         </div>
       </div>
       <div className="mt-12 text-center">
-        <p className="text-xl sm:text-2xl mb-6">Click the button below to view my experiences.</p>
         <Link href='#experience'>
           <button className="btn bg-gray-300 hover:bg-gray-400 border-none text-center w-44 rounded-lg transition-colors duration-300">
             Experience

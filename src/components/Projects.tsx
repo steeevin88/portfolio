@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import Image from 'next/image';
 import Link from "next/link";
-import { ChevronDown, X, ExternalLink, Github } from 'lucide-react';
+import { X, ExternalLink, Github, ChevronUp } from 'lucide-react';
 
 type Project = {
   photoUrl: string;
@@ -217,7 +217,7 @@ export default function Projects() {
           </Link>
         </div>
       </div>
-      <ChevronDown className="animate-bounce mt-12 w-8 h-8 mx-auto text-gray-600" />
+      <ChevronUp className="animate-bounce mt-12 w-8 h-8 mx-auto text-gray-600" />
     </section>
   );
 }
