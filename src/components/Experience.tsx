@@ -17,7 +17,7 @@ type Experience = {
 export default function Experience() {
   const experienceData: Experience[] = [
     {
-      photoUrl:'https://github.com/user-attachments/assets/cdc64574-a5a7-454b-87e9-0c445c661e8c',
+      photoUrl:'experience_images/meta.png',
       title:'Software Engineering Intern',
       company:'Meta',
       dateRange:'Incoming Summer 2025',
@@ -28,7 +28,7 @@ export default function Experience() {
       skills: '',
     },
     {
-      photoUrl:'https://github.com/user-attachments/assets/ab9c455c-edc7-449c-bf61-06a16601f02a',
+      photoUrl:'experience_images/fetch.png',
       title:'Software Engineering Intern',
       company:'Fetch.ai',
       dateRange:'August 2024 - December 2024',
@@ -39,7 +39,7 @@ export default function Experience() {
       skills: 'Skills: Python, TypeScript, Jest, CI/CD',
     },
     {
-      photoUrl:'https://github.com/user-attachments/assets/74dffcf0-a90f-44c4-b3fb-f0ba89aec65b',
+      photoUrl:'experience_images/usgs.png',
       title:'Software Engineering Intern',
       company:'United States Geological Survey (USGS)',
       dateRange:'May 2024 - September 2024',
@@ -50,7 +50,7 @@ export default function Experience() {
       skills: 'Skills: HTML/CSS, React.js, Python, Folium, Docker, NGINX',
     },
     {
-      photoUrl:'https://github.com/user-attachments/assets/579c08d4-6674-4f6a-b81f-1dfd1eee54b1',
+      photoUrl:'experience_images/ibm.png',
       title:'Software Track Participant',
       company:'IBM Accelerate',
       dateRange:'June 2024 - August 2024',
@@ -61,7 +61,7 @@ export default function Experience() {
       skills: 'Skills: HTML/CSS, React.js, Jest',
     },
     {
-      photoUrl:'https://github.com/steeevin88/portfolio/assets/59713070/0738527b-ab14-4029-902a-4789e6a8dc60',
+      photoUrl:'experience_images/sjsu_coe.png',
       title:'Software Engineering Intern',
       company:'SJSU College of Engineering',
       dateRange:'December 2023 - January 2024',
@@ -72,7 +72,7 @@ export default function Experience() {
       skills: 'Skills: Docker, React.js, TailwindCSS, FastAPI, Prometheus',
     },
     {
-      photoUrl:'https://github.com/steeevin88/steeevin88/assets/59713070/c99b42e3-9718-43a0-8915-9c840dfe36f4',
+      photoUrl:'experience_images/sce.png',
       title:'Development Team Officer',
       company:'Software and Computer Engineering Society',
       dateRange:'March 2023 - Present',
@@ -83,7 +83,7 @@ export default function Experience() {
       skills: 'Skills: Git, HTML/CSS, Next.js, React.js, TailwindCSS, Docker',
     },
     {
-      photoUrl:'https://github.com/steeevin88/portfolio/assets/59713070/0738527b-ab14-4029-902a-4789e6a8dc60',
+      photoUrl:'experience_images/sjsu.png',
       title:'Instructional Student Assistant',
       company:'SJSU Computer Science Department',
       dateRange:'March 2023 - December 2023',
@@ -94,7 +94,7 @@ export default function Experience() {
       skills: 'Skills: Java, Eclipse IDE',
     },
     {
-      photoUrl:'https://github.com/steeevin88/steeevin88/assets/59713070/bbc5c054-efe4-41f1-b96a-a84da7397e77',
+      photoUrl:'experience_images/google.png',
       title:'Google CSSI Participant',
       company:'Google',
       dateRange:'June 2022 - August 2022',
