@@ -38,8 +38,8 @@ export default function About() {
       </div>
       <div className="mt-12 text-center">
         <Link href='#experience'>
-          <button className="btn bg-gray-300 hover:bg-gray-400 border-none text-center w-44 rounded-lg transition-colors duration-300">
-            Experience
+          <button className="bg-gray-300 hover:bg-gray-400 text-black font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+            My Experiences
           </button>
         </Link>
       </div>

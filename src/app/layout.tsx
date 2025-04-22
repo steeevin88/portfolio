@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <CSPostHogProvider>
-        <body className={`text-black ${inter.className} scrollbar`}>
+        <body className={`text-black ${inter.className}`}>
           <Navbar/>
           {children}
           <Footer/>

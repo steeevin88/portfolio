@@ -220,7 +220,7 @@ export default function Projects() {
         </div>
         <div className="mt-12 text-center">
           <Link href='#home'>
-            <button className="bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+            <button className="bg-gray-300 hover:bg-gray-400 text-black font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
               Back to Home
             </button>
           </Link>

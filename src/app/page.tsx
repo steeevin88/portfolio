@@ -47,7 +47,9 @@ export default function Home() {
         </div>
         <div className="text-lg sm:text-xl md:text-3xl flex flex-col items-center text-center gap-4 mt-4 md:mt-8">
           <Link href='#about'>
-            <button className="btn bg-gray-300 hover:bg-gray-400 border-none text-center w-44 rounded-lg transition-colors duration-300">About Me</button>
+            <button className="bg-gray-800 hover:bg-gray-700 text-white font-bold text-sm py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+             About Me
+            </button>
           </Link>
         </div>
         <ChevronDown className="animate-bounce mt-8 w-8 h-8" />
