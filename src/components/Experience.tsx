@@ -17,15 +17,26 @@ type Experience = {
 export default function Experience() {
   const experienceData: Experience[] = [
     {
+      photoUrl:'experience_images/tesla.png',
+      title:'Software Engineering Intern',
+      company:'Tesla',
+      dateRange:'Incoming August 2025',
+      description:
+        <>
+          • Fall 2025, Vehicle Software (Infotainment) 🚗<br/>
+        </>,
+      skills: '',
+    },
+    {
       photoUrl:'experience_images/meta.png',
       title:'Software Engineering Intern',
       company:'Meta',
-      dateRange:'Incoming Summer 2025',
+      dateRange:'May 2025 - August 2025',
       description:
         <>
-          • Menlo Park 🏠<br/>
+          • Building Ticketmaster-related integrations for Facebook&apos;s Events Product Team 🗓️<br/>
         </>,
-      skills: '',
+      skills: 'Skills: PHP/Hack, React, React Native',
     },
     {
       photoUrl:'experience_images/fetch.png',
@@ -158,7 +169,7 @@ function ExperienceCard({ photoUrl, title, company, dateRange, description, skil
             <p className="text-sm text-gray-500">{dateRange}</p>
           </div>
           <div className="px-6 py-4 bg-gray-50 flex justify-between items-center mt-auto">
-            <span className="text-sm text-gray-600">Click to view details</span>
+            <span className="text-sm text-gray-600" />
             <ChevronRight className="w-5 h-5 text-gray-400" />
           </div>
         </div>
@@ -174,7 +185,7 @@ function ExperienceCard({ photoUrl, title, company, dateRange, description, skil
             )}
           </div>
           <div className="px-6 py-4 bg-gray-50 flex justify-between items-center mt-auto">
-            <span className="text-sm text-gray-600">Click to go back</span>
+            <span className="text-sm text-gray-600" />
             <ChevronRight className="w-5 h-5 text-gray-400 transform rotate-180" />
           </div>
         </div>

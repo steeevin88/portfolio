@@ -146,7 +146,7 @@ function ProjectModalComponent({photoUrl, title, dateInfo, description, repoUrl,
     <>
       <button
         onClick={() => setIsOpen(true)}
-        className="bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition duration-300"
+        className="bg-gray-800 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition duration-300 text-sm"
       >
         View Details
       </button>
