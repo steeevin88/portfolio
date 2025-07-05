@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
       </nav>
       <aside>
-        <p>©2024 - Built and Designed by Steven Le</p>
+        <p className="text-xs">Built and Designed by Steven Le</p>
       </aside>
     </footer>
   )

@@ -136,16 +136,7 @@ export default function Navbar() {
               Resume
             </Link>
           </div>
-          <div className="pt-4 pb-3 border-t border-gray-700">
-            <div className="flex items-center px-5">
-              <div className="flex-shrink-0">
-                {/* You can add a profile image here if you have one */}
-              </div>
-              <div className="ml-3">
-                <div className={classNames("text-base font-medium leading-none", linkColor)}>Steven Le</div>
-                <div className={classNames("text-sm font-medium leading-none", linkColor)}>stevenleusa79@yahoo.com</div>
-              </div>
-            </div>
+          <div className="pb-3 border-t border-gray-700">
             <div className="mt-3 px-2 space-y-1">
               <div className="flex space-x-4">
                 <Link href="https://www.linkedin.com/in/steven-le-90b28b23b/" target="_blank" rel="noopener noreferrer">
