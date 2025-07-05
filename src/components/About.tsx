@@ -15,7 +15,7 @@ export default function About() {
               Thanks for visiting! My name is Steven Le.
             </p>
             <p>
-              I&apos;m a junior at San Jose State University pursuing a bachelor&apos;s of science in computer science. I&apos;m most interested in web development and DevOps, but I&apos;m constantly exploring other areas of software engineering to find where my skills best apply.
+              I&apos;m a senior at San Jose State University pursuing a bachelor&apos;s of science in computer science. I&apos;m most interested in web development and DevOps, but I&apos;m constantly exploring other areas of software engineering to find where my skills best apply.
             </p>
             <p>
               Outside of school, you can find me leading projects for SJSU&apos;s Software and Computer Engineering Society (<Link href="https://sce.sjsu.edu/" className="underline" target="_blank" rel="noopener noreferrer">SCE</Link>), bringing ideas to life at hackathons, or working on personal projects.
@@ -27,7 +27,7 @@ export default function About() {
         </div>
         <div className="flex flex-col justify-center items-center lg:col-span-2">
           <Image
-            src="/me.png"
+            src="/me.jpg"
             alt="steven"
             width={400}
             height={400}

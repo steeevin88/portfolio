@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <section className="flex flex-col justify-center items-center min-h-screen py-8 px-4 bg-gradient-to-b from-[#7C909A] via-[#7C909A] to-gray-300" id="home">
-        <div className="text-5xl md:text-7xl lg:text-8xl font-bold text-center my-8 h-32 whitespace-nowrap overflow-hidden">
+        <div className="text-5xl md:text-7xl lg:text-8xl font-bold text-center mt-8 h-32">
           <Typewriter onInit={(typewriter) => {typewriter.typeString("Hey! I'm Steven.").start()}} />
         </div>
 
