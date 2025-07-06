@@ -9,19 +9,18 @@ export default function About() {
       <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 max-w-7xl mx-auto">
         <div className="flex flex-col lg:col-span-3 gap-6 md:gap-8">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold">ABOUT</h2>
-          <h3 className="text-2xl sm:text-3xl">Welcome!</h3>
           <div className="text-base sm:text-lg lg:text-xl space-y-4">
             <p>
-              Thanks for visiting! My name is Steven Le.
+              Thanks for visiting! My name is Steven Le 😄
             </p>
             <p>
-              I&apos;m a senior at San Jose State University pursuing a bachelor&apos;s of science in computer science. I&apos;m most interested in web development and DevOps, but I&apos;m constantly exploring other areas of software engineering to find where my skills best apply.
+              I&apos;m a senior at San Jose State University pursuing a bachelor&apos;s of science in computer science. My past experiences largely involve web development and building product infrastructure, but I&apos;m always exploring new technologies and tooling to sharpen my development skills.
             </p>
             <p>
-              Outside of school, you can find me leading projects for SJSU&apos;s Software and Computer Engineering Society (<Link href="https://sce.sjsu.edu/" className="underline" target="_blank" rel="noopener noreferrer">SCE</Link>), bringing ideas to life at hackathons, or working on personal projects.
+              Outside of lectures, you can find me leading projects for SJSU&apos;s Software and Computer Engineering Society (<Link href="https://sce.sjsu.edu/" className="underline" target="_blank" rel="noopener noreferrer">SCE</Link>), bringing ideas to life at hackathons, or working on personal projects.
             </p>
             <p>
-              I&apos;m working towards a career in software engineering, where I hope to advance projects that makes differences in people&apos;s lives. This website is intended to serve as a personal portfolio, documenting my progess towards that goal.
+              I&apos;m working towards a career in software engineering, where I hope to advance projects that makes differences in people&apos;s lives. This website is intended to serve as a personal portfolio, documenting my progress towards that goal.
             </p>
           </div>
         </div>
