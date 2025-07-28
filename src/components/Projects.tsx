@@ -192,7 +192,7 @@ function ProjectModalComponent({photoUrl, title, dateInfo, description, repoUrl,
 
 function ProjectCard(props: Project) {
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
+    <div className="bg-white shadow-lg rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl">
       <div className="h-48 bg-gray-200 flex items-center justify-center p-4">
         <Image src={props.photoUrl} alt={props.title} width={500} height={400} className="object-contain max-h-full" />
       </div>
@@ -213,7 +213,7 @@ export default function Projects() {
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 mb-4">PROJECTS</h2>
           <p className="text-xl text-gray-600">A few things that I&apos;ve worked on...</p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {projectsData.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}

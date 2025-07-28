@@ -124,7 +124,7 @@ export default function Experience() {
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 mb-4">EXPERIENCES</h2>
           <p className="text-xl text-gray-600">My professional journey so far</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {experienceData.map((experience, index) => (
             <ExperienceCard key={index} {...experience} />
           ))}
@@ -153,8 +153,8 @@ function ExperienceCard({ photoUrl, title, company, dateRange, description, skil
     <div className="w-full max-w-sm mx-auto mb-2 cursor-pointer h-[400px]" onClick={handleClick}>
       <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
         {/* Front Side */}
-        <div className="w-full h-[400px] bg-white shadow-lg rounded-lg overflow-hidden flex flex-col text-center">
-          <div className="h-48 bg-gray-100 flex items-center justify-center p-4">
+        <div className="w-full h-[400px] bg-white shadow-lg rounded-2xl overflow-hidden flex flex-col text-center">
+          <div className="h-40 bg-gray-100 flex items-center justify-center p-4">
             <Image
               src={photoUrl}
               alt={`${company} logo`}
