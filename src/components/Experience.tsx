@@ -23,8 +23,8 @@ export default function Experience() {
       title: "Software Engineer Intern",
       company: "Tesla",
       dateRange: "August 2025 - December 2025",
-      description: "Vehicle Software (<b>Infotainment</b>) 🚗",
-      skills: "Linux, Jenkins, Docker",
+      description: "Engineered testing infrastructure behind validating <b>Tesla's Robotaxi</b> and <b>Navigation</b> services 🚗",
+      skills: "Golang, Python, Jenkins, Docker, Kafka, Redis, Prometheus, Grafana",
       brandColor: "from-red-800 to-red-700",
     },
     {
@@ -41,8 +41,8 @@ export default function Experience() {
       title: "Software Engineer Intern",
       company: "Fetch.ai",
       dateRange: "August 2024 - December 2024",
-      description: "Worked on a TypeScript implementation of Fetch.ai's <b>uAgents</b> package 🚀",
-      skills: "Python, TypeScript, Jest, CI/CD",
+      description: "Worked on a TypeScript implementation of <b>Fetch.ai's uAgents</b> package 🚀",
+      skills: "Python, TypeScript, Jest",
       brandColor: "from-purple-900 to-purple-800",
     },
     {
@@ -50,7 +50,7 @@ export default function Experience() {
       title: "Software Engineer Intern",
       company: "United States Geological Survey (USGS)",
       dateRange: "May 2024 - September 2024",
-      description: "Built an <b>earthquake response platform</b> for the Crustal Deformation Team 🌎",
+      description: "Developed an earthquake response platform for the <b>Crustal Deformation</b> Team 🌎",
       skills: "HTML/CSS, React.js, Python, GeoJSON, Docker, NGINX",
       brandColor: "from-green-800 to-green-700",
     },
@@ -59,7 +59,7 @@ export default function Experience() {
       title: "Software Track Participant",
       company: "IBM Accelerate",
       dateRange: "June 2024 - August 2024",
-      description: "Participated in IBM's <b>8-week summer program</b> focused on full-stack development 🖥️",
+      description: "Participated in <b>IBM</b>'s 8-week summer program focused on full-stack development 🖥️",
       skills: "HTML/CSS, React.js, Jest",
       brandColor: "from-blue-900 to-blue-800",
     },
@@ -69,7 +69,7 @@ export default function Experience() {
       company: "SJSU College of Engineering",
       dateRange: "December 2023 - January 2024",
       description: "Created a transit prediction service (SCEta) for a club of 500+ students 🚌",
-      skills: "Docker, React.js, TailwindCSS, FastAPI, Prometheus",
+      skills: "Docker, React.js, Tailwind, FastAPI, Prometheus",
       brandColor: "from-amber-700 to-amber-600",
     },
     {
@@ -78,7 +78,7 @@ export default function Experience() {
       company: "Software and Computer Engineering Society",
       dateRange: "March 2023 - Present",
       description: "Developed projects with aspiring software engineering students 🧠",
-      skills: "Git, HTML/CSS, Next.js, React.js, TailwindCSS, Docker",
+      skills: "Git, HTML/CSS, Next.js, React.js, Tailwind, Docker",
       brandColor: "from-indigo-800 to-indigo-700",
     },
     {
@@ -87,7 +87,7 @@ export default function Experience() {
       company: "SJSU Computer Science Department",
       dateRange: "March 2023 - December 2023",
       description: "Student grader and mentor for SJSU's Introduction to Programming course (CS46A) 🏫",
-      skills: "Java, Eclipse IDE",
+      skills: "Java",
       brandColor: "from-blue-900 to-blue-800",
     },
     {
@@ -228,7 +228,7 @@ function ExperienceCard({
                   {skillsArray.map((skill, index) => (
                     <span
                       key={index}
-                      className="px-2 py-1 bg-gradient-to-r from-gray-400 to-gray-500 text-white text-xs font-medium rounded-full shadow-sm hover:shadow-md transition-shadow"
+                      className="px-2 py-1 bg-gray-500 text-white text-xs font-medium rounded-full shadow-sm hover:shadow-md transition-shadow"
                     >
                       {skill}
                     </span>
